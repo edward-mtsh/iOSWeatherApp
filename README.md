@@ -16,6 +16,7 @@ Some weather API options to consider
 
 Use Cases:
 •	List daily temperatures in your area
+
 •	View weather details for a specific day chosen from the daily temperatures list.
 
 Technical Requirements:
