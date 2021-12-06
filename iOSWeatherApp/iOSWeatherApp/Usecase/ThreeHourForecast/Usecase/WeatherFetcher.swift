@@ -27,8 +27,8 @@ class WeatherFetcher {
 
     // MARK: - Prpperties
     
-    private let delegate: WeatherFetcherDelegate!
-    private let provider: WeatherServiceGatewayProvider!
+    private let delegate: WeatherFetcherDelegate
+    private let provider: WeatherServiceGatewayProvider
     
     // MARK: - Init
     

@@ -1,7 +1,6 @@
 import Foundation
 import Alamofire
 import AlamofireSwiftyJSON
-import CocoaLumberjack
 
 protocol WeatherServiceGatewayProvider {
     func loadWeatherForCurrentLocation(latitude: String, longitude: String, completion: @escaping (ForecastServiceModel?, Error?) -> Void)

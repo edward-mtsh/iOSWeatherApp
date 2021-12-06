@@ -19,12 +19,15 @@ class ConcreteWeatherFetcherViewModel: WeatherFetcherViewModel, WeatherFetcherDe
     
     private weak var delegate: WeatherFetcherViewModelDelegate?
     
-    init(delegate: WeatherFetcherViewModelDelegate) {
+    init(delegate: WeatherFetcherViewModelDelegate?) {
         self.delegate = delegate
     }
     
     func didFinishFetchingWeather(forecast: Forecast?, error: Error?) {
-        guard error == nil, let threeHourForecast = forecast?.threeHourForecast, let city = forecast?.city else {
+        guard
+            error == nil,
+            let threeHourForecast = forecast?.threeHourForecast,
+            let city = forecast?.city else {
             return
         }
         self.threeHourForecast = threeHourForecast

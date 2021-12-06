@@ -51,9 +51,7 @@ class WeatherTableViewController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 {
-            navigateToForecastDetail(threeHourForecast: viewModel.threeHourForecast[indexPath.row])
-        }
+        indexPath.section == 1 ? navigateToForecastDetail(threeHourForecast: viewModel.threeHourForecast[indexPath.row]) : ()
     }
     
     private func navigateToForecastDetail(threeHourForecast: ThreeHourForecast) {

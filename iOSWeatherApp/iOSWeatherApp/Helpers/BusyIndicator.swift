@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-var activityView = UIActivityIndicatorView(style: .whiteLarge)
+var activityView = UIActivityIndicatorView(style: .large)
 
 extension UIViewController {
     
